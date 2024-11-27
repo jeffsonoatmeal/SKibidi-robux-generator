@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Robux Generator 3000</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #ff6f61;
+        }
+        .container {
+            padding: 20px;
+        }
+        .button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px 30px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #ff3b3b;
+        }
+        .fake-console {
+            background: #000;
+            color: #0f0;
+            padding: 10px;
+            font-family: monospace;
+            width: 90%;
+            margin: 20px auto;
+            border-radius: 5px;
+            height: 150px;
+            overflow-y: scroll;
+        }
+        .rickroll-box {
+            display: none;
+            margin: 20px auto;
+            padding: 15px;
+            border: 2px solid #ff6f61;
+            border-radius: 5px;
+            background: #fff;
+            color: #333;
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Real Robux Generator 3000</h1>
+        <p>Enter your username and click the button to get **UNLIMITED ROBUX**!</p>
+        <input type="text" id="username" placeholder="Enter your username">
+        <br>
+        <button class="button" onclick="generateRobux()">Generate Robux</button>
+        <div class="fake-console" id="console">
+            <p>Awaiting input...</p>
+        </div>
+        <div class="rickroll-box" id="rickrollBox">
+            <h3>Success!</h3>
+            <p>Your Robux has been generated. Click the link below to redeem:</p>
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank" style="color: #ff6f61; font-weight: bold;">Redeem Robux</a>
+        </div>
+    </div>
+    <footer>
+        <p>Note: Skibidi!</p>
+    </footer>
+    <script>
+        function generateRobux() {
+            const username = document.getElementById("username").value;
+            const consoleElement = document.getElementById("console");
+            const rickrollBox = document.getElementById("rickrollBox");
+            
+            if (!username) {
+                alert("Please enter a username!");
+                return;
+            }
+
+            consoleElement.innerHTML = `<p>Connecting to Roblox servers...</p>`;
+            setTimeout(() => {
+                consoleElement.innerHTML += `<p>Authenticating username: ${username}</p>`;
+            }, 1000);
+            setTimeout(() => {
+                consoleElement.innerHTML += `<p>Generating 999,999 Robux...</p>`;
+            }, 2000);
+            setTimeout(() => {
+                consoleElement.innerHTML += `<p><strong>Success: Robux generated!</strong></p>`;
+                rickrollBox.style.display = "block"; // Show the Rickroll box
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
